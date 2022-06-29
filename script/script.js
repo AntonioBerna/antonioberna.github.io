@@ -18,7 +18,7 @@ function runner() {
             $(".load").fadeOut(1000);
             $(".container").fadeIn(1200);
         }
-    }, 250);
+    }, 200);
 }
 
 runner();
