@@ -2,7 +2,6 @@ let textarea = $(".term");
 let text = "sh berna.sh";
 let i = 0;
 
-
 function runner() {
     $(".container").hide();
 
