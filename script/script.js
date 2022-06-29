@@ -1,5 +1,5 @@
 let textarea = $(".term");
-let text = "sh antonio_bernardini.sh";
+let text = "sh berna.sh";
 let i = 0;
 
 
