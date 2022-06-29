@@ -12,12 +12,12 @@ function runner() {
         if (i < text.length) {
             runner();
         } else {
-            textarea.append("<br>")
+            // textarea.append("<br>");
             i = 0;
             $(".load").fadeOut(1000);
             $(".container").fadeIn(1200);
         }
-    }, 200);
+    }, 300);
 }
 
 runner();

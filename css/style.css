@@ -32,7 +32,7 @@ pre {
 }
 
 .term:after {
-    content: "_";
+    content: "\2589";
     opacity: 1;
     animation: cursor 1s infinite;
 }
