@@ -15,12 +15,8 @@ function runner() {
         } else {
             textarea.append("<br>")
             i = 0;
-            setTimeout(function () {
-                setTimeout(function () {
-                    $(".load").fadeOut(1000);
-                    $(".container").fadeIn(1200);
-                }, 250);
-            }, 250);
+            $(".load").fadeOut(1000);
+            $(".container").fadeIn(1200);
         }
     }, 250);
 }
