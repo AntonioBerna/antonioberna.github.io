@@ -4,12 +4,11 @@ let i = 0;
 
 function runner() {
     $(".container").hide();
-
-    textarea.append(text.charAt(i));
-    i++;
     
     setTimeout(function () {
         if (i < text.length) {
+            textarea.append(text.charAt(i));
+            i++;
             runner();
         } else {
             // textarea.append("<br>");
@@ -17,7 +16,7 @@ function runner() {
             $(".load").fadeOut(1000);
             $(".container").fadeIn(1200);
         }
-    }, 500);
+    }, 300);
 }
 
 runner();
