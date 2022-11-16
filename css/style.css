@@ -1,77 +1,77 @@
 body {
-    margin: 0 auto;
-    height: 100%;
+	margin: 0 auto;
+	height: 100%;
 
-    /* iOS Safari */
-    -webkit-touch-callout: none;
-    
-    /* Safari */
-    -webkit-user-select: none;
-    
-    /* Konqueror HTML */
-    -khtml-user-select: none;
-    
-    /* Old versions of Firefox */
-    -moz-user-select: none;
-    
-    /* Internet Explorer/Edge */
-    -ms-user-select: none;
+	/* iOS Safari */
+	-webkit-touch-callout: none;
 
-    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-    user-select: none;
+	/* Safari */
+	-webkit-user-select: none;
+
+	/* Konqueror HTML */
+	-khtml-user-select: none;
+
+	/* Old versions of Firefox */
+	-moz-user-select: none;
+
+	/* Internet Explorer/Edge */
+	-ms-user-select: none;
+
+	/* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	user-select: none;
 }
 
 pre {
-    padding: 0;
-    margin: 0;
-    background-color: #292a2d;
+	padding: 0;
+	margin: 0;
+	background-color: #292a2d;
 }
 
 .load {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	color: white;
 }
 
 .term {
-    font-family: monospace;
-    color: #fff;
-    opacity: 0.8;
-    font-size: 2em;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-top: 10px;
-    padding-left: 20px;
+	font-family: monospace;
+	color: #fff;
+	opacity: 0.8;
+	font-size: 2em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-left: 20px;
 }
 
 .term:after {
-    content: "\2589";
-    opacity: 1;
-    animation: cursor 1s infinite;
+	content: "\2589";
+	opacity: 1;
+	animation: cursor 1s infinite;
 }
 
 @keyframes cursor {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    40% {
-        opacity: 0;
-    }
+	40% {
+		opacity: 0;
+	}
 
-    50% {
-        opacity: 1;
-    }
+	50% {
+		opacity: 1;
+	}
 
-    90% {
-        opacity: 1;
-    }
+	90% {
+		opacity: 1;
+	}
 
-    100% {
-        opacity: 0;
-    }
+	100% {
+		opacity: 0;
+	}
 }
