@@ -1,5 +1,5 @@
 let textarea = $(".term");
-let text = "sh berna.sh";
+let text = "./berna.sh";
 let i = 0;
 
 function runner() {
@@ -11,7 +11,6 @@ function runner() {
             i++;
             runner();
         } else {
-            // textarea.append("<br>");
             i = 0;
             $(".load").fadeOut(1000);
             $(".container").fadeIn(1200);
