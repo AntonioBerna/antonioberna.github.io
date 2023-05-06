@@ -1,21 +1,21 @@
-let textarea = $(".term");
-let text = "./berna.sh";
-let i = 0;
+$(document).ready(function() {
+	let text = "./berna.sh";
+	let i = 0;
 
-function runner() {
-    $(".container").hide();
-    
-    setTimeout(function () {
-        if (i < text.length) {
-            textarea.append(text.charAt(i));
-            i++;
-            runner();
-        } else {
-            i = 0;
-            $(".load").fadeOut(1000);
-            $(".container").fadeIn(1200);
-        }
-    }, 300);
-}
+	$(".container").hide();
+	$(".term").text("$ ");
 
-runner();
+	let interval = setInterval(function () {
+		if (i == text.length) {
+			clearInterval(interval);
+			let fadeOutDuration = Math.min(Math.max(text.length * 50, 500), 3000);
+			let fadeInDuration = Math.min(Math.max(text.length * 100, 1200), 5000);
+			$(".term").fadeOut(fadeOutDuration, function() {
+				$(".container").fadeIn(fadeInDuration);
+			});
+			return;
+		}
+		$(".term").text($(".term").text() + text.charAt(i));
+		i++;
+	}, 300);
+});
