@@ -546,7 +546,7 @@ img {
 }
 
 .skills__c {
-	width: 70%;
+	width: 75%;
 }
 
 .skills__assembly {
@@ -571,6 +571,14 @@ img {
 
 .skills__github_pages {
 	width: 95%;
+}
+
+.skills__linode {
+	width: 50%;
+}
+
+.skills__google_cloud {
+	width: 75%;
 }
 
 .skills__psql {
