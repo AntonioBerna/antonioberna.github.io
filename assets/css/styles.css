@@ -525,9 +525,38 @@ img {
 	background-color: var(--first-color);
 }
 
+/* CODING SKILLS */
 .skills__python {
 	width: 90%;
 }
+
+.skills__c_cpp {
+	width: 75%;
+}
+
+.skills__matlab {
+	width: 25%;
+}
+
+.skills__processing {
+	width: 75%;
+}
+
+/* EMBEDDED SKILLS */
+
+.skills__arduino {
+	width: 85%;
+}
+
+.skills__raspberry {
+	width: 75%;
+}
+
+.skills__esp {
+	width: 25%;
+}
+
+/* FULL STACK SKILLS */
 
 .skills__django_flask {
 	width: 75%;
@@ -545,17 +574,7 @@ img {
 	width: 80%;
 }
 
-.skills__c {
-	width: 75%;
-}
-
-.skills__assembly {
-	width: 25%;
-}
-
-.skills__arduino_raspberry {
-	width: 80%;
-}
+/* CLOUD SKILLS */
 
 .skills__heroku {
 	width: 85%;
@@ -581,6 +600,8 @@ img {
 	width: 75%;
 }
 
+/* DATABASE SKILLS */
+
 .skills__psql {
 	width: 70%;
 }
@@ -589,6 +610,21 @@ img {
 	width: 85%;
 }
 
+/* ROBOTICS SKILLS */
+
+.skills__plc {
+	width: 50%;
+}
+
+.skills__ros_ros2 {
+	width: 5%;
+}
+
+.skills__webots_gazebo {
+	width: 5%;
+}
+
+/* OTHER SETTINGS */
 .skills__close .skills__list {
 	height: 0;
 	overflow: hidden;
