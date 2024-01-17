@@ -525,21 +525,33 @@ img {
 	background-color: var(--first-color);
 }
 
-/* CODING SKILLS */
+/* LANGUAGES SKILLS */
 .skills__python {
 	width: 90%;
 }
 
 .skills__c_cpp {
-	width: 75%;
+	width: 80%;
 }
 
 .skills__matlab {
+	width: 75%;
+}
+
+.skills__rust {
 	width: 25%;
 }
 
-.skills__processing {
-	width: 75%;
+.skills__html_css {
+	width: 80%;
+}
+
+.skills__js {
+	width: 60%;
+}
+
+.skills__swift {
+	width: 25%;
 }
 
 /* EMBEDDED SKILLS */
@@ -556,28 +568,32 @@ img {
 	width: 25%;
 }
 
-/* FULL STACK SKILLS */
+.skills__ni_multisim {
+	width: 50%;
+}
+
+/* WEB FRAMEWORKS SKILLS */
 
 .skills__django_flask {
 	width: 75%;
-}
-
-.skills__html_css {
-	width: 80%;
-}
-
-.skills__js {
-	width: 60%;
 }
 
 .skills__bootstrap {
 	width: 80%;
 }
 
-/* CLOUD SKILLS */
+/* DEVOPS SKILLS */
+
+.skills__git_github {
+	width: 95%;
+}
 
 .skills__heroku {
 	width: 85%;
+}
+
+.skills__docker {
+	width: 25%;
 }
 
 .skills__aws {
@@ -586,10 +602,6 @@ img {
 
 .skills__pya {
 	width: 75%;
-}
-
-.skills__github_pages {
-	width: 95%;
 }
 
 .skills__linode {
@@ -612,16 +624,18 @@ img {
 
 /* ROBOTICS SKILLS */
 
-.skills__plc {
-	width: 50%;
-}
-
 .skills__ros_ros2 {
 	width: 5%;
 }
 
 .skills__webots_gazebo {
 	width: 5%;
+}
+
+/* AUTOMATION SKILLS */
+
+.skills__plc {
+	width: 50%;
 }
 
 /* OTHER SETTINGS */
