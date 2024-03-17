@@ -550,8 +550,8 @@ img {
 	width: 60%;
 }
 
-.skills__swift {
-	width: 25%;
+.skills__latex {
+	width: 90%;
 }
 
 /* EMBEDDED SKILLS */
@@ -628,7 +628,7 @@ img {
 	width: 5%;
 }
 
-.skills__webots_gazebo {
+.skills__gazebo {
 	width: 5%;
 }
 
@@ -637,6 +637,53 @@ img {
 .skills__plc {
 	width: 50%;
 }
+
+/* OPERATING SYSTEMS */
+
+.skills__linux_distros {
+	width: 85%;
+}
+
+.skills__macos {
+	width: 75%;
+}
+
+.skills__windows {
+	width: 70%;
+}
+
+/* VIRTUAL MACHINES */
+
+.skills__virtualbox {
+	width: 85%;
+}
+
+.skills__vmware {
+	width: 70%;
+}
+
+.skills__qemu {
+	width: 80%;
+}
+
+/* AUDIO & VIDEO */
+
+.skills__audacity {
+	width: 60%;
+}
+
+.skills__obs_studio {
+	width: 80%;
+}
+
+.skills__ffmpeg {
+	width: 70%;
+}
+
+.skills__kdenlive {
+	width: 80%;
+}
+
 
 /* OTHER SETTINGS */
 .skills__close .skills__list {
