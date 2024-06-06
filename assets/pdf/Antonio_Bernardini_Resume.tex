@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on March 17th, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Antonio Bernardini} \\ \vspace{8pt}
+    \small
+    \faIcon{github}
+    \href{https://github.com/AntonioBerna}{\underline{github.com/AntonioBerna}} $  $
+    \faIcon{code}
+    \href{https://antonioberna.github.io}
+    {\underline{antonioberna.github.io}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/antonioberna/}{\underline{linkedin.com/in/antonioberna/}} $  $ \\
+    \faIcon{envelope}
+    \href{mailto:antoniobernardini@live.com}
+    {\underline{antoniobernardini@live.com}}
+    \faIcon{phone} (+39) 3338704611
+\end{center}
+
+% -------------------- EXPERIENCE --------------------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%           \resumeProjectHeading
+%           {\textbf{Competitive Programming Club} $|$ \footnotesize\emph{Member}\vspace{8pt}}{Sept. 2023 -- Present}
+%           {\small{Involved in the club centered around Competitive Programming}}
+
+%           \resumeProjectHeading
+%           {\textbf{Apex Tutoring}\vspace{8pt} $|$ \footnotesize\emph{Tutor}}{2019 -- Present}
+%           \small{Routinely tutor K--12 students in math, coding, etc.}
+
+%           \resumeProjectHeading
+%           {\textbf{Luigi Team Charity} $|$ \footnotesize\emph{Volunteer, Manager}\vspace{8pt}}{2018 -- Present}
+%           {\small{Earned an award for philanthropic hours spent, still giving away 100 stocked backpacks a year}}
+
+%         \subsection{Hobbies}
+          
+%           \resumeProjectHeading
+%           {\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
+%           {\small{Played the drums in symphonic, jazz, and marching bands}}
+
+%           \resumeProjectHeading
+%           {\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
+%           {\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
+          
+%     \resumeSubHeadingListEnd 
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Tor Vergata University}{Rome, IT}
+      {Computer Engineering}{Present}
+      
+    \resumeSubheading
+      {IIS Enzo Ferrari Technical Institute}{Rome, IT}
+      {Electronic Design oriented towards Automatic Controls}{Final Grade: 100/100}
+
+    \vspace{-10pt}
+
+    \subsection{Coursework}
+      \textbf{Courses:} Algorithms \& Data Structures, Linear Algebra, Calculus, Analog and Digital Electronics, Electrical Engineering, Digital Signal Processing, Operating Systems.
+      % Embedded Systems
+      % Distributed Systems Engineering
+      
+  \resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{Cosmic Dust} $|$ \footnotesize\emph{HTML, CSS, Javascript, GitHub, Google Cloud}}{}
+        \resumeItemListStart
+            \resumeItem{Deployment: \href{https://cosmicdust.space}{\underline{https://cosmicdust.space}}}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/cosmic-dust}{\underline{https://github.com/AntonioBerna/cosmic-dust}}}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{Automated Parking} $|$ \footnotesize\emph{C++, Python, Arduino Mega, Raspberry, Telegram Bot, GitHub}}{}
+        \resumeItemListStart
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/automated-parking}{\underline{https://github.com/AntonioBerna/automated-parking}}}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Logic Gates LED Control using Neural Networks} $|$ \footnotesize\emph{Python, Raspberry, GitHub}}{}
+        \resumeItemListStart
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages:}{ Python, C, C++, Matlab, \LaTeX, HTML, CSS, Javascript, Rust, x86 Assembly, ARM Assembly} \\
+     \textbf{DevOps:}{ Git, GitHub, Docker, Heroku, PythonAnywhere, Linode, Google Cloud, AWS} \\
+     \textbf{Embedded Systems:}{ Arduino, Raspberry, ESP32, NI Multisim, KiCad, FPGA} \\
+     \textbf{Web Frameworks:}{ Django, Flask, Bootstrap} \\ 
+     \textbf{Operating Systems:}{ all Linux distributions, macOS, Windows} \\
+     \textbf{DBMS:}{ PostgreSQL, MongoDB} \\
+     \textbf{VM:}{ VirtualBox, VMware, QEMU} \\
+     \textbf{Audio \& Video:}{ Audacity, OBS Studio, FFmpeg, Kdenlive} \\
+     
+     % \textbf{Editors:}{ VSCode, Visual Studio, CLion, RustRover, Vim, nano}
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+
+% -------------------- HOBBIES --------------------
+\section{Hobbies}
+  \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{Manage my 
+ \underline{\href{https://youtube.com/c/CleverCode}{YouTube Channel}}}}{}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
+
+
+
