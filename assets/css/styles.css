@@ -554,6 +554,14 @@ img {
 	width: 90%;
 }
 
+.skills__x86_asm {
+	width: 10%;
+}
+
+.skills__arm_asm {
+	width: 10%;
+}
+
 /* EMBEDDED SKILLS */
 
 .skills__arduino {
@@ -568,8 +576,16 @@ img {
 	width: 25%;
 }
 
+.skills__kicad {
+	width: 25%;
+}
+
 .skills__ni_multisim {
 	width: 50%;
+}
+
+.skills__fpga {
+	width: 5%;
 }
 
 /* WEB FRAMEWORKS SKILLS */
@@ -593,7 +609,7 @@ img {
 }
 
 .skills__docker {
-	width: 25%;
+	width: 50%;
 }
 
 .skills__aws {
@@ -622,22 +638,6 @@ img {
 	width: 85%;
 }
 
-/* ROBOTICS SKILLS */
-
-.skills__ros_ros2 {
-	width: 5%;
-}
-
-.skills__gazebo {
-	width: 5%;
-}
-
-/* AUTOMATION SKILLS */
-
-.skills__plc {
-	width: 50%;
-}
-
 /* OPERATING SYSTEMS */
 
 .skills__linux_distros {
@@ -663,7 +663,7 @@ img {
 }
 
 .skills__qemu {
-	width: 80%;
+	width: 30%;
 }
 
 /* AUDIO & VIDEO */
