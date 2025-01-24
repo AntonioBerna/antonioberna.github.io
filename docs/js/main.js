@@ -254,3 +254,9 @@ submitButton.addEventListener("click", (event) => {
         form.submit();
     }
 });
+
+form.addEventListener('submit', function (event) {
+    setTimeout(() => {
+        window.location.href = "https://antonioberna.github.io/";
+    }, 1500);
+});
