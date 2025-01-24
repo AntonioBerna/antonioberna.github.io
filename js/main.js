@@ -1,3 +1,9 @@
+window.addEventListener('pagehide', (event) => {
+    if (event.persisted) {
+        console.log('Page is being cached for bfcache.');
+    }
+});
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
@@ -85,11 +91,24 @@ modalBtns.forEach((modalBtn, i) => {
 
 modalCloses.forEach((modalClose) => {
     modalClose.addEventListener("click", () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove("active-modal");
-        });
+        closeModal();
     });
 });
+
+// Add event listener to close the modal when clicking outside of it
+window.addEventListener("click", (event) => {
+    modalViews.forEach((modalView) => {
+        if (event.target == modalView) {
+            closeModal();
+        }
+    });
+});
+
+function closeModal() {
+    modalViews.forEach((modalView) => {
+        modalView.classList.remove("active-modal");
+    });
+}
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
@@ -106,36 +125,38 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 });
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        }
-    }
-});
+// let swiperTestimonial = new Swiper(".testimonial__container", {
+//     loop: true,
+//     grabCursor: true,
+//     spaceBetween: 48,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+//     breakpoints: {
+//         568: {
+//             slidesPerView: 2,
+//         }
+//     }
+// });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
         const sectionId = current.getAttribute("id");
+        const navLink = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link");
+            navLink.classList.add("active-link");
         } else {
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link");
+            navLink.classList.remove("active-link");
         }
     });
 }
@@ -192,6 +213,44 @@ themeButton.addEventListener("click", () => {
 const form = document.getElementById("form");
 const submitButton = document.getElementById("submit");
 
-submitButton.addEventListener("click", () => {
-    form.submit();
+submitButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const name = form.querySelector('input[name="name"]');
+    const email = form.querySelector('input[name="email"]');
+    const project = form.querySelector('input[name="project"]');
+    const message = form.querySelector('textarea[name="message"]');
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const projectError = document.getElementById("projectError");
+    const messageError = document.getElementById("messageError");
+
+    let isValid = true;
+
+    // Reset error messages
+    nameError.textContent = '';
+    emailError.textContent = '';
+    projectError.textContent = '';
+    messageError.textContent = '';
+
+    if (!name.value.trim()) {
+        isValid = false;
+        nameError.textContent = "Name is required.";
+    }
+    if (!email.value.trim()) {
+        isValid = false;
+        emailError.textContent = "Email is required.";
+    }
+    if (!project.value.trim()) {
+        isValid = false;
+        projectError.textContent = "Project is required.";
+    }
+    if (!message.value.trim()) {
+        isValid = false;
+        messageError.textContent = "Message is required.";
+    }
+
+    if (isValid) {
+        form.submit();
+    }
 });

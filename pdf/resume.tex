@@ -14,7 +14,10 @@
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 
-\input{glyphtounicode}
+\usepackage{fontspec}
+\setmainfont{JetBrainsMonoNerdFont}[Contextuals={WordInitial,WordFinal}, BoldFont={*-Bold}, ItalicFont={*-Italic}]
+
+% \input{glyphtounicode}
 
 % -------------------- FONT OPTIONS --------------------
 % sans-serif
@@ -53,7 +56,7 @@
 }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% \pdfgentounicode=1
 
 % -------------------- CUSTOM COMMANDS --------------------
 \newcommand{\resumeItem}[1]{
@@ -102,7 +105,7 @@
   % \vspace{-4pt}
   \color{gray}
   \item
-  Last Updated on March 17th, 2024
+  Last Updated on December, 2024
 \end{flushright}
 
 \vspace{-5pt}
@@ -123,6 +126,25 @@
     \faIcon{phone} (+39) 3338704611
 \end{center}
 
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Tor Vergata University}{Rome, IT}
+      {Computer Engineering (Robotics and Automation)}{Present}
+    \resumeSubheading
+      {I.I.S. Enzo Ferrari}{Rome, IT}
+      {Technical High School Diploma in Electronics}{Final Grade: 100/100}      
+  \resumeSubHeadingListEnd
+
+% -------------------- HOBBIES --------------------
+% \section{Hobbies}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%     {\textbf{Manage my \underline{\href{https://youtube.com/c/CleverCode}{YouTube Channel}}}}{}
+%   \resumeSubHeadingListEnd
+
 % -------------------- EXPERIENCE --------------------
 % \section{Experience}
 %   \resumeSubHeadingListStart
@@ -138,8 +160,6 @@
 %           \resumeProjectHeading
 %           {\textbf{Luigi Team Charity} $|$ \footnotesize\emph{Volunteer, Manager}\vspace{8pt}}{2018 -- Present}
 %           {\small{Earned an award for philanthropic hours spent, still giving away 100 stocked backpacks a year}}
-
-%         \subsection{Hobbies}
           
 %           \resumeProjectHeading
 %           {\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
@@ -149,85 +169,44 @@
 %           {\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
 %           {\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
           
-%     \resumeSubHeadingListEnd 
-
-% -------------------- EDUCATION --------------------
-\section{Education}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Tor Vergata University}{Rome, IT}
-      {Computer Engineering}{Present}
-      
-    \resumeSubheading
-      {IIS Enzo Ferrari Technical Institute}{Rome, IT}
-      {Electronic Design oriented towards Automatic Controls}{Final Grade: 100/100}
-
-    \vspace{-10pt}
-
-    \subsection{Coursework}
-      \textbf{Courses:} Algorithms \& Data Structures, Linear Algebra, Calculus, Analog and Digital Electronics, Electrical Engineering, Digital Signal Processing, Operating Systems.
-      % Embedded Systems
-      % Distributed Systems Engineering
-      
-  \resumeSubHeadingListEnd
+%     \resumeSubHeadingListEnd
 
 % -------------------- PROJECTS --------------------
-\section{Projects}
-    \resumeSubHeadingListStart
+% \section{Projects}
+    % \resumeSubHeadingListStart
+        % \resumeProjectHeading
+        % {\textbf{Cosmic Dust} $|$ \footnotesize\emph{HTML, CSS, Javascript, GitHub, Google Cloud}}{}
+        % \resumeItemListStart
+        %     \resumeItem{Deployment: \href{https://cosmicdust.space}{\underline{https://cosmicdust.space}}}
+        %     \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/cosmic-dust}{\underline{https://github.com/AntonioBerna/cosmic-dust}}}
+        %   \resumeItemListEnd
     
-        \resumeProjectHeading
-        {\textbf{Cosmic Dust} $|$ \footnotesize\emph{HTML, CSS, Javascript, GitHub, Google Cloud}}{}
-        \resumeItemListStart
-            \resumeItem{Deployment: \href{https://cosmicdust.space}{\underline{https://cosmicdust.space}}}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/cosmic-dust}{\underline{https://github.com/AntonioBerna/cosmic-dust}}}
-          \resumeItemListEnd
-    
-        \resumeProjectHeading
-        {\textbf{Automated Parking} $|$ \footnotesize\emph{C++, Python, Arduino Mega, Raspberry, Telegram Bot, GitHub}}{}
-        \resumeItemListStart
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/automated-parking}{\underline{https://github.com/AntonioBerna/automated-parking}}}
-          \resumeItemListEnd
+        % \resumeProjectHeading
+        % {\textbf{Automated Parking} $|$ \footnotesize\emph{C++, Python, Arduino Mega, Raspberry, Telegram Bot, GitHub}}{}
+        % \resumeItemListStart
+        %     \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/automated-parking}{\underline{https://github.com/AntonioBerna/automated-parking}}}
+        %   \resumeItemListEnd
 
-        \resumeProjectHeading
-        {\textbf{Logic Gates LED Control using Neural Networks} $|$ \footnotesize\emph{Python, Raspberry, GitHub}}{}
-        \resumeItemListStart
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
-          \resumeItemListEnd
+        % \resumeProjectHeading
+        % {\textbf{Logic Gates LED Control using Neural Networks} $|$ \footnotesize\emph{Python, Raspberry, GitHub}}{}
+        % \resumeItemListStart
+        %     \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
+        %   \resumeItemListEnd
           
-    \resumeSubHeadingListEnd
+    % \resumeSubHeadingListEnd
 
 % -------------------- SKILLS --------------------
-\section{Skills}
+\section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     
-     \textbf{Languages:}{ Python, C, C++, Matlab, \LaTeX, HTML, CSS, Javascript, Rust, x86 Assembly, ARM Assembly} \\
-     \textbf{DevOps:}{ Git, GitHub, Docker, Heroku, PythonAnywhere, Linode, Google Cloud, AWS} \\
-     \textbf{Embedded Systems:}{ Arduino, Raspberry, ESP32, NI Multisim, KiCad, FPGA} \\
-     \textbf{Web Frameworks:}{ Django, Flask, Bootstrap} \\ 
-     \textbf{Operating Systems:}{ all Linux distributions, macOS, Windows} \\
-     \textbf{DBMS:}{ PostgreSQL, MongoDB} \\
-     \textbf{VM:}{ VirtualBox, VMware, QEMU} \\
-     \textbf{Audio \& Video:}{ Audacity, OBS Studio, FFmpeg, Kdenlive} \\
-     
-     % \textbf{Editors:}{ VSCode, Visual Studio, CLion, RustRover, Vim, nano}
-     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-     
+     \textbf{Software Development:}{ Python, C, C++, Rust, Django, Flask, PostgreSQL, MongoDB, CUDA } \\
+     \textbf{Embedded \& Firmware:}{ Arduino, Raspberry Pi, ESP32, STM32, Assembly, PlatformIO } \\
+     \textbf{Hardware Design:}{ Digital, SimulIDE, KiCAD } \\
+     \textbf{DevOps:}{ Git, GitHub, Heroku, Docker, PythonAnywhere, Linode, Google Cloud } \\
+     \textbf{Documentation:}{ Markdown, \LaTeX, TeXmacs, Excalidraw, Draw.io } \\
+     \textbf{Teaching:}{ Audacity, OBS Studio, FFmpeg, Kdenlive} \\
     }}
  \end{itemize}
 
-
-% -------------------- HOBBIES --------------------
-\section{Hobbies}
-  \resumeSubHeadingListStart
-          \resumeProjectHeading
-          {\textbf{Manage my 
- \underline{\href{https://youtube.com/c/CleverCode}{YouTube Channel}}}}{}
-          
-    \resumeSubHeadingListEnd 
-
 \end{document}
-
-
-
