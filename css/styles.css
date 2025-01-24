@@ -1,6 +1,3 @@
-/*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
 /*==================== VARIABLES CSS ====================*/
 :root {
 	--header-height: 3rem;
@@ -25,7 +22,8 @@
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
 	/*========== Font and typography ==========*/
-	--body-font: 'Poppins', sans-serif;
+	/* --body-font: 'Poppins', sans-serif; */
+	--body-font: 'JetBrains Mono', sans-serif;
 
 	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 	--big-font-size: 2rem;
@@ -454,7 +452,7 @@ img {
 }
 
 .about__link:hover {
-	color: var(--text-color-light);
+	color: var(--first-color);
 }
 
 
@@ -525,45 +523,40 @@ img {
 	background-color: var(--first-color);
 }
 
-/* LANGUAGES SKILLS */
+/* SOFTWARE DEVELOPMENT SKILLS */
 .skills__python {
 	width: 90%;
 }
 
-.skills__c_cpp {
+.skills__c {
 	width: 80%;
 }
 
-.skills__matlab {
-	width: 75%;
+.skills__cpp {
+	width: 70%;
 }
 
 .skills__rust {
 	width: 25%;
 }
 
-.skills__html_css {
-	width: 80%;
+.skills__django_flask {
+	width: 75%;
 }
 
-.skills__js {
-	width: 60%;
+.skills__psql {
+	width: 70%;
 }
 
-.skills__latex {
-	width: 90%;
+.skills__mongo {
+	width: 85%;
 }
 
-.skills__x86_asm {
-	width: 10%;
+.skills__cuda {
+	width: 15%;
 }
 
-.skills__arm_asm {
-	width: 10%;
-}
-
-/* EMBEDDED SKILLS */
-
+/* EMBEDDED & FIRMWARE SKILLS */
 .skills__arduino {
 	width: 85%;
 }
@@ -576,30 +569,32 @@ img {
 	width: 50%;
 }
 
-.skills__kicad {
+.skills__stm {
+	width: 10%;
+}
+
+.skills__asm {
 	width: 25%;
 }
 
-.skills__ni_multisim {
-	width: 50%;
+.skills__pio {
+	width: 60%;
 }
 
-.skills__fpga {
-	width: 5%;
+/* DIGITAL DESIGN SKILLS */
+.skills__digital {
+	width: 90%;
 }
 
-/* WEB FRAMEWORKS SKILLS */
-
-.skills__django_flask {
-	width: 75%;
+.skills__simulide {
+	width: 60%;
 }
 
-.skills__bootstrap {
-	width: 80%;
+.skills__kicad {
+	width: 30%;
 }
 
 /* DEVOPS SKILLS */
-
 .skills__git_github {
 	width: 95%;
 }
@@ -612,61 +607,44 @@ img {
 	width: 50%;
 }
 
-.skills__aws {
+/* .skills__aws {
 	width: 15%;
-}
+} */
 
 .skills__pya {
 	width: 75%;
 }
 
 .skills__linode {
-	width: 50%;
+	width: 20%;
 }
 
 .skills__google_cloud {
 	width: 75%;
 }
 
-/* DATABASE SKILLS */
-
-.skills__psql {
-	width: 70%;
+/* DOCS SKILLS */
+.skills__markdown {
+	width: 100%;
 }
 
-.skills__mongo {
+.skills__latex {
+	width: 90%;
+}
+
+.skills__texmacs {
+	width: 80%;
+}
+
+.skills__excalidraw {
 	width: 85%;
 }
 
-/* OPERATING SYSTEMS */
-
-.skills__linux_distros {
-	width: 85%;
+.skills__drawio {
+	width: 80%;
 }
 
-.skills__macos {
-	width: 75%;
-}
-
-.skills__windows {
-	width: 70%;
-}
-
-/* VIRTUAL MACHINES */
-
-.skills__virtualbox {
-	width: 85%;
-}
-
-.skills__vmware {
-	width: 70%;
-}
-
-.skills__qemu {
-	width: 30%;
-}
-
-/* AUDIO & VIDEO */
+/* TEACHING SKILLS */
 
 .skills__audacity {
 	width: 60%;
@@ -683,7 +661,6 @@ img {
 .skills__kdenlive {
 	width: 80%;
 }
-
 
 /* OTHER SETTINGS */
 .skills__close .skills__list {
@@ -1001,6 +978,16 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
+.error {
+	color: red;
+	font-size: 0.875em;
+	margin-top: 0.25em;
+}
+
+#submit {
+	user-select: none;
+}
+
 .contact__container {
 	row-gap: 3rem;
 }
@@ -1405,7 +1392,7 @@ img {
 
 	.footer__links {
 		flex-direction: row;
-		column-gap: 2rem;
+		column-gap: 1.5rem;
 	}
 
 	.footer__socials {
