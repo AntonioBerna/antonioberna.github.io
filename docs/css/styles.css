@@ -540,7 +540,7 @@ img {
 	width: 25%;
 }
 
-.skills__django_flask {
+.skills__flask {
 	width: 75%;
 }
 
@@ -581,17 +581,21 @@ img {
 	width: 60%;
 }
 
+.skills__lvgl {
+	width: 80%;
+}
+
 /* DIGITAL DESIGN SKILLS */
+.skills__kicad {
+	width: 80%;
+}
+
 .skills__digital {
 	width: 90%;
 }
 
-.skills__simulide {
+.skills__easyeda {
 	width: 60%;
-}
-
-.skills__kicad {
-	width: 30%;
 }
 
 /* DEVOPS SKILLS */
@@ -599,12 +603,12 @@ img {
 	width: 95%;
 }
 
-.skills__heroku {
-	width: 85%;
-}
-
 .skills__docker {
 	width: 50%;
+}
+
+.skills__heroku {
+	width: 85%;
 }
 
 /* .skills__aws {
