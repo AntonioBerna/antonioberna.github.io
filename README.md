@@ -5,7 +5,36 @@
 ![GitHub License](https://img.shields.io/github/license/AntonioBerna/antonioberna.github.io)
 ![GitHub Created At](https://img.shields.io/github/created-at/antonioberna/antonioberna.github.io)
 
-## tools
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/AntonioBerna/antonioberna.github.io.git
+
+# Install the dependency packages
+npm install
+
+# Start the development server on http://localhost:3000
+npm run dev
+```
+
+### 🛠 Update the dependencies
+
+```bash
+# Install npm-check-updates
+npm install -g npm-check-updates
+
+# Show the outdated dependencies
+ncu
+
+# Update the dependencies
+ncu -u
+
+# Install the updated dependencies
+npm install
+```
+
+## 🔧 Tools
 
 - Icons:
     - [unicons](https://icon-sets.iconify.design/uil/?keyword=uil)
