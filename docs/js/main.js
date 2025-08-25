@@ -114,6 +114,7 @@ function closeModal() {
 let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
+    initialSlide: 0,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
