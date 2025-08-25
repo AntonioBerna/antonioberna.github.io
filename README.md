@@ -34,7 +34,7 @@ ncu -u
 npm install
 ```
 
-## 🔧 Tools
+## 🔧 Dependency Management
 
 - Icons:
     - [unicons](https://icon-sets.iconify.design/uil/?keyword=uil)
