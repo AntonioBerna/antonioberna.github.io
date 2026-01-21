@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Explore the portfolio of Antonio Bernardini, a Computer Engineering student and electronics enthusiast, showcasing projects in software, firmware, hardware, and cybersecurity.">
 	<meta name="author" content="Antonio Bernardini">
+	<meta name="keywords" content="Antonio Bernardini, Computer Engineering, Embedded Systems, Cybersecurity, Hardware Design, Firmware Development, Python, C, C++, Rust, Electronics, IoT, Software Development, Security Consultant, Portfolio">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -44,8 +45,11 @@
 
 	<title>Antonio Bernardini — Student, Instructor, Consultant</title>
 
-	<link rel="icon" href="icon/engineer-hat-white.webp" type="image/webp">
-	<link rel="apple-touch-icon" href="icon/engineer-hat-white.webp">
+	<!-- Favicon con supporto adattivo per light/dark mode -->
+	<link rel="icon" href="icon/clever-code-logo-white.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+	<link rel="icon" href="icon/clever-code-logo-dark.webp" type="image/webp" media="(prefers-color-scheme: light)">
+	<link rel="icon" href="icon/clever-code-logo-white.webp" type="image/webp">
+	
 	<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
 	<script type="application/ld+json">
@@ -67,6 +71,12 @@
 					"url": "https://antonioberna.github.io/",
 					"image": "https://antonioberna.github.io/imgs/me.webp",
 					"jobTitle": "Computer Engineering Student",
+					"description": "Computer Engineering student specializing in embedded systems, cybersecurity, firmware development, and hardware design",
+					"knowsAbout": ["Software Development", "Firmware Development", "Embedded Systems", "Cybersecurity", "Hardware Design", "Python", "C", "C++", "Rust"],
+					"alumniOf": {
+						"@type": "EducationalOrganization",
+						"name": "University of Rome Tor Vergata"
+					},
 					"sameAs": [
 						"https://github.com/AntonioBerna/",
 						"https://www.linkedin.com/in/antonio-bernardini-466b63238/",
@@ -137,19 +147,19 @@
 	<main class="main">
 		<!--==================== HOME ====================-->
 		<section class="home section" id="home">
-			<div class="home__container container grid">
+			<article class="home__container container grid">
 				<div class="home__content grid">
 					<div class="home__social">
-						<a href="https://github.com/AntonioBerna/" target="_blank" class="home__social-icon">
+						<a href="https://github.com/AntonioBerna/" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="Visit Antonio Bernardini's GitHub profile">
 							<i class="uil uil-github-alt"></i>
 						</a>
-						<a href="https://www.linkedin.com/in/antonio-bernardini-466b63238/" target="_blank" class="home__social-icon">
+						<a href="https://www.linkedin.com/in/antonio-bernardini-466b63238/" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="Connect with Antonio Bernardini on LinkedIn">
 							<i class="uil uil-linkedin"></i>
 						</a>
-						<a href="https://twitter.com/berna_engineer" target="_blank" class="home__social-icon">
+						<a href="https://twitter.com/berna_engineer" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="Follow Antonio Bernardini on Twitter">
 							<i class="ph ph-x-logo"></i>
 						</a>
-						<a href="https://youtube.com/c/CleverCode" target="_blank" class="home__social-icon">
+						<a href="https://youtube.com/c/CleverCode" target="_blank" rel="noopener noreferrer" class="home__social-icon" aria-label="Subscribe to CleverCode YouTube channel">
 							<i class="uil uil-youtube"></i>
 						</a>
 					</div>
@@ -166,7 +176,7 @@
 								165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
 								129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
 								-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-								<image class="home__blob-img" x='4' y='18' xlink:href="imgs/me.webp"/>
+								<image class="home__blob-img" x='4' y='18' xlink:href="imgs/me.webp" alt="Antonio Bernardini - Computer Engineering Student"/>
 							</g>
 						</svg>
 					</div>
@@ -187,7 +197,7 @@
 						<i class="uil uil-arrow-down home__scroll-arrow"></i>
 					</a>
 				</div>
-			</div>
+			</article>
 		</section>
 
 		<!--==================== ABOUT ====================-->
@@ -208,13 +218,13 @@
 							165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
 							129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
 							-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-							<image class="home__blob-img" x='20' y='4' xlink:href="imgs/clever-code-logo.webp"/>
+							<image class="home__blob-img" x='20' y='4' xlink:href="icon/clever-code-logo-white.webp" alt="CleverCode YouTube Channel Logo"/>
 						</g>
 					</svg>
 				</div>
 				<div class="about__data">
 					<p class="about__description">I'm Antonio, a passionate Computer Engineering Student and Electronics Hobbyist. I have experience in software, firmware, hardware design and development, and cybersecurity, always focused on producing high-quality work.</p>
-					<p class="about__description">I'm also the creator of a popular <a class="about__link" href="https://www.youtube.com/c/CleverCode" target="_blank">YouTube channel</a> where I teach coding to thousands of people in Italy, helping them learn and grow in the world of technology.</p>
+					<p class="about__description">I'm also the creator of a popular <a class="about__link" href="https://www.youtube.com/c/CleverCode" target="_blank" rel="noopener noreferrer" aria-label="CleverCode YouTube channel for coding tutorials">YouTube channel</a> where I teach coding to thousands of people in Italy, helping them learn and grow in the world of technology.</p>
 					<p class="about__description">Driven by my passion for innovation, I strive to push the boundaries of what's possible, creating solutions that blend creativity with technical expertise.</p>
 					<!-- <div class="about__info">
 						<div>
@@ -873,11 +883,11 @@
 				<div class="swiper-wrapper">
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/computer-architecture-engineering.webp" height="600" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/computer-architecture-engineering.webp" height="600" alt="Computer Architecture Engineering project - Digital Electronics and Assembly programming" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Computer Architecture Engineering</h3>
 							<p class="portfolio__description">This repository contains work from the Computer Architecture course, centered on Digital Electronics, Assembly, and C programming. Key projects include the design of a circuit for 8-bit Hamming code encoding and decoding, the iterative implementation of a 4-bit ALU, and a control system for a three-floor elevator with an additional VIP floor. Other significant contributions involve reverse engineering tasks bridging Assembly and C, the implementation of the RC4 encryption algorithm in both languages, a detailed analysis of the reverse engineering phases of "Dr. Male", and the custom development of malloc and free functions purely in Assembly.</p>
-							<a href="https://github.com/AntonioBerna/computer-architecture-engineering/" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/computer-architecture-engineering/" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View Computer Architecture Engineering project on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -885,11 +895,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/spqr.webp" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/spqr.webp" alt="S.P.Q.R. - Selective Protocol for Quality and Reliability UDP implementation" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">S.P.Q.R.</h3>
 							<p class="portfolio__description">The S.P.Q.R. (Selective Protocol for Quality and Reliability) software allows file exchange via the UDP protocol, ensuring reliable data transfer thanks to the implementation of the Selective Repeat protocol. During development, I performed extensive tests to analyze network traffic on localhost using Wireshark, verifying the correct transmission of packets and the behavior of the protocol in different scenarios. I also performed performance tests, collecting data on system performance and plotting the results through Python scripts, to evaluate the efficiency and optimize the software.</p>
-							<a href="https://github.com/AntonioBerna/spqr" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/spqr" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View S.P.Q.R. project on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -897,11 +907,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/roma.webp" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/roma.webp" alt="ROMA - Runtime Optimization and Memory Analysis tool in Rust" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Runtime Optimization and Memory Analysis</h3>
 							<p class="portfolio__description">This Rust-based tool simplifies the compilation and memory analysis process for C, Assembly, and C++ projects. It replaces separate Makefile configurations, offering a unified solution for compiling code and performing tasks like memory leak checks with Valgrind. Users can specify project directories, languages, and actions (build, Valgrind test, or clean) via a simple command-line interface. With built-in compiler options and Valgrind logging, it streamlines project management and boosts productivity.</p>
-							<a href="https://github.com/AntonioBerna/roma" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/roma" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View ROMA project on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -909,11 +919,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/spectrum-analyzer.webp" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/spectrum-analyzer.webp" alt="Spectrum Analyzer - Real-time FFT audio analysis with ESP32" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Spectrum Analyzer</h3>
 							<p class="portfolio__description">This project uses the ESP32 microcontroller to create a real-time spectrum analyzer. It employs the Radix-2 Fast Fourier Transform (FFT) algorithm to convert time-domain signals into their frequency-domain representation. The ESP32 samples audio signals from a KY-037 microphone through its ADC, processing them in real time. The frequency spectrum is then visualized on an OLED display. The system supports configurable sampling rates, making it adaptable for various signal analysis applications, particularly in audio analysis and signal processing.</p>
-							<a href="https://github.com/AntonioBerna/spectrum-analyzer" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/spectrum-analyzer" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View Spectrum Analyzer project on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -921,11 +931,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/pwnable-kr.webp" height="600" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/pwnable-kr.webp" height="600" alt="pwnable.kr CTF Solutions - Binary exploitation and reverse engineering challenges" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">pwnable.kr</h3>
 							<p class="portfolio__description">A collection of solutions for the pwnable.kr Capture The Flag (CTF) challenges. This repository includes detailed write-ups and code for solving various exploitation and reverse engineering tasks, demonstrating skills in binary exploitation, vulnerability analysis, and debugging. The challenges cover a wide range of topics such as buffer overflows, format string vulnerabilities, and shellcode execution. The repository showcases my ability to tackle complex security problems and provides a hands-on understanding of common cybersecurity techniques.</p>
-							<a href="https://github.com/AntonioBerna/pwnable.kr" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/pwnable.kr" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View pwnable.kr CTF solutions on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -933,11 +943,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/nn-rpi-logic-gates.webp" alt="" class="portfolio__img" height="600">
+						<img src="imgs/portfolio/nn-rpi-logic-gates.webp" alt="Neural Network Raspberry Pi Logic Gates - Custom Python ML implementation" class="portfolio__img" height="600">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Neural Network Raspberry Pi Logic Gates</h3>
 							<p class="portfolio__description">This project, implemented on a Raspberry Pi, involves the creation of a custom neural network in Python, built from scratch without using external libraries, to recognize logical gates from Boolean algebra. By manually implementing the neural network architecture, training algorithm, and activation functions, this project offers a deep dive into machine learning fundamentals and provides a hands-on approach to neural network development, specifically in the context of digital logic design.</p>
-							<a href="https://github.com/AntonioBerna/nn-rpi-logic-gates" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/nn-rpi-logic-gates" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View Neural Network Logic Gates project on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -945,11 +955,11 @@
 					</div>
 					<!--==================== PROJECT ====================-->
 					<div class="portfolio__content grid swiper-slide">
-						<img src="imgs/portfolio/automated-parking.webp" alt="" class="portfolio__img">
+						<img src="imgs/portfolio/automated-parking.webp" alt="Automated Parking System - Arduino and Raspberry Pi IoT project" class="portfolio__img">
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Automated Parking</h3>
 							<p class="portfolio__description">For my final project in 2020/2021, I developed a mini automated parking system combining an Arduino Mega with a Raspberry Pi. The Arduino Mega manages sensors that detect the presence of vehicles, while the Raspberry Pi handles communication with the Telegram bot, sending updates about the number of free spots. This project highlights my skills in integrating hardware and software, utilizing IoT technology, and implementing a user-friendly interface for real-time monitoring.</p>
-							<a href="https://github.com/AntonioBerna/automated-parking/blob/main/Elaborato%20Parcheggio%20Automatizzato.pdf" class="button button--flex button--small portfolio__button" target="_blank">
+							<a href="https://github.com/AntonioBerna/automated-parking/blob/main/Elaborato%20Parcheggio%20Automatizzato.pdf" class="button button--flex button--small portfolio__button" target="_blank" rel="noopener noreferrer" aria-label="View Automated Parking project documentation on GitHub">
 								More information
 								<i class="uil uil-external-link-alt button__icon" style="margin-left: 8px;"></i>
 							</a>
@@ -978,7 +988,7 @@
 							<i class="uil uil-message project__icon button__icon" style="margin-left: 8px;"></i>
 						</a>
 					</div>
-					<img src="imgs/me.webp" alt="" class="project__img">
+					<img src="imgs/me.webp" alt="Antonio Bernardini - Get in touch for new projects" class="project__img">
 				</div>
 			</div>
 		</section>
@@ -1140,16 +1150,16 @@
 					</li>
 				</ul>
 				<div class="footer__socials">
-					<a href="https://github.com/AntonioBerna/" target="_blank" class="footer__social">
+					<a href="https://github.com/AntonioBerna/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="GitHub">
 						<i class="uil uil-github-alt"></i>
 					</a>
-					<a href="https://www.linkedin.com/in/antonio-bernardini-466b63238/" target="_blank" class="footer__social">
+					<a href="https://www.linkedin.com/in/antonio-bernardini-466b63238/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
 						<i class="uil uil-linkedin"></i>
 					</a>
-					<a href="https://twitter.com/berna_engineer" target="_blank" class="footer__social">
+					<a href="https://twitter.com/berna_engineer" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Twitter">
 						<i class="ph ph-x-logo"></i>
 					</a>
-					<a href="https://youtube.com/c/CleverCode" target="_blank" class="footer__social">
+					<a href="https://youtube.com/c/CleverCode" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="YouTube">
 						<i class="uil uil-youtube"></i>
 					</a>
 				</div>
