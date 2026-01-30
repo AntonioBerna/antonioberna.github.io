@@ -15,7 +15,16 @@
 \usepackage{fontawesome5}
 
 \usepackage{fontspec}
-\setmainfont{JetBrainsMonoNerdFont}[Contextuals={WordInitial,WordFinal}, BoldFont={*-Bold}, ItalicFont={*-Italic}]
+% Try JetBrains Mono first, fallback to system monospace font
+\IfFontExistsTF{JetBrains Mono}{
+    \setmainfont{JetBrains Mono}[Scale=0.9]
+}{
+    \IfFontExistsTF{Menlo}{
+        \setmainfont{Menlo}[Scale=0.9]
+    }{
+        \setmainfont{Monaco}[Scale=0.9]
+    }
+}
 
 % \input{glyphtounicode}
 
@@ -36,7 +45,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\topmargin}{-0.75in} % Reduced from -1in to -0.75in for better page breaks
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -44,6 +53,10 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
+% Better page breaking
+\widowpenalty=1000
+\clubpenalty=1000
 
 % Section formatting
 \titleformat{\section}{
@@ -129,13 +142,58 @@
 % -------------------- EDUCATION --------------------
 \section{Education}
   \resumeSubHeadingListStart
-  
     \resumeSubheading
       {Tor Vergata University}{Rome, IT}
-      {Computer Engineering (Robotics and Automation)}{Present}
+      {B.Sc. in Computer Engineering}{2021 -- Present}
     \resumeSubheading
       {I.I.S. Enzo Ferrari}{Rome, IT}
-      {Technical High School Diploma in Electronics}{Final Grade: 100/100}      
+      {Technical High School Diploma in Electronics}{2016 -- 2021}      
+  \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://github.com/Weigence}{\underline{Weigence}}}{Rome, IT}
+      {CEO \& CTO}{Present}
+      \resumeItemListStart
+        \resumeItem{Founded tech company offering integrated ERP solutions with optional IoT hardware for warehouse automation}
+        \resumeItem{Architected modular platform with Django backend, Flutter mobile apps, PostgreSQL database, and ESP32 hardware with AI-powered parts recognition}
+        \resumeItem{Secured CO.GE. Impianti S.r.l. as first commercial client with successful ERP deployment}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{https://www.cogeimpiantisrl.it/}{\underline{CO.GE. Impianti S.r.l.}} (via \href{https://github.com/Weigence}{\underline{Weigence}})}{Mentana (Rome), IT}
+      {Strategic Consultant}{July 2025 -- January 2026}
+      \resumeItemListStart
+        \resumeItem{Implemented complete ERP system for warehouse management with software-only solution (client opted out of hardware integration)}
+        \resumeItem{Deployed production infrastructure on cloud with containerized services and relational database}
+        \resumeItem{Delivered cross-platform mobile applications for warehouse operations and inventory management}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.vectorlab-cg.com/}{\underline{VectorLab S.r.l.}}}{Genoa, IT (Remote)}
+      {Web Developer \& Maintainer}{July 2025 -- October 2025}
+      \resumeItemListStart
+        \resumeItem{Developed interactive 3D web experiences using TypeScript and Three.js}
+        \resumeItem{Implemented clean architecture with design patterns for maintainable codebase}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Open Source Contributions}{Remote}
+      {Embedded Systems Libraries}{Present}
+      \resumeItemListStart
+        \resumeItem{Contributed 5 PRs to Arduino ecosystem (\href{https://github.com/arduino-libraries/Arduino_Modulino}{\underline{Modulino}}, \href{https://github.com/arduino-libraries/NTPClient}{\underline{NTPClient}}, \href{https://github.com/arduino-libraries/ArduinoHttpClient}{\underline{ArduinoHttpClient}})}
+        \resumeItem{Enhanced ESP32 camera drivers in Espressif \href{https://github.com/espressif/esp32-camera}{\underline{esp32-camera}} library}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+        {\href{https://www.youtube.com/c/CleverCode}{\underline{CleverCode YouTube Channel}}}{Rome, IT}
+        {Creator \& Educational Content Producer}{2022 -- Present}
+        \resumeItemListStart
+          \resumeItem{Built community of 1.5K+ subscribers with 1.7K monthly views through technical tutorials in Italian}
+          \resumeItem{Popular series include \href{https://www.youtube.com/playlist?list=PLT--ndZEB54ek5_Zv6x6WCioh5m35zh5i}{\underline{Embedded Rust on ESP32}}, and \href{https://www.youtube.com/watch?v=x-YfzhppzcQ}{\underline{Git \& GitHub}} comprehensive courses}
+        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 % -------------------- HOBBIES --------------------
@@ -171,39 +229,71 @@
           
 %     \resumeSubHeadingListEnd
 
+% -------------------- COMPANY --------------------
+% (moved above Experience)
+
+\newpage % Force a clean page break
+\vspace{0.5in} % Add some top margin for the new page
+
 % -------------------- PROJECTS --------------------
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-        {\textbf{OmniMatica} $|$ \footnotesize\emph{ESP-IDF, ILI9341, LVGL, SDL2, KiCAD, EasyEDA, Python, Blender}}{}
+        {\textbf{Sudoku Solver} $|$ \footnotesize\emph{C, Bitmasking, Backtracking}}{}
         \resumeItemListStart
-            \resumeItem{Open Source Code: \href{https://github.com/OmniMatica}{\underline{https://github.com/OmniMatica}}}
-          \resumeItemListEnd
-    
-        % \resumeProjectHeading
-        % {\textbf{Automated Parking} $|$ \footnotesize\emph{C++, Python, Arduino Mega, Raspberry, Telegram Bot, GitHub}}{}
-        % \resumeItemListStart
-        %     \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/automated-parking}{\underline{https://github.com/AntonioBerna/automated-parking}}}
-        %   \resumeItemListEnd
-
-        % \resumeProjectHeading
-        % {\textbf{Logic Gates LED Control using Neural Networks} $|$ \footnotesize\emph{Python, Raspberry, GitHub}}{}
-        % \resumeItemListStart
-        %     \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
-        %   \resumeItemListEnd
-          
+            \resumeItem{3rd Place Tor Vergata Programming Challenge 2023 - Solves 9 sudoku puzzles in 637.9μs average using Bitmasking + Backtracking Algorithm}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/sudoku-solver}{\underline{https://github.com/AntonioBerna/sudoku-solver}}}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{ESP32 Spectrum Analyzer} $|$ \footnotesize\emph{C++, ESP32, FFT, Signal Processing}}{}
+        \resumeItemListStart
+            \resumeItem{Real-time spectrum analyzer using FFT (radix-2) algorithm implemented in C++ for ESP32}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/spectrum-analyzer}{\underline{https://github.com/AntonioBerna/spectrum-analyzer}}}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Valkit} $|$ \footnotesize\emph{Docker, Valgrind, Cross-Platform}}{}
+        \resumeItemListStart
+            \resumeItem{Docker tool extending Valgrind to macOS with multi-architecture support (amd64/arm64) and glibc compatibility fixes}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/valkit}{\underline{https://github.com/AntonioBerna/valkit}}}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Rubber Ducky} $|$ \footnotesize\emph{Security Research, USB HID}}{}
+        \resumeItemListStart
+            \resumeItem{Security research tool for USB HID attack simulation and penetration testing}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/rubber-ducky}{\underline{https://github.com/AntonioBerna/rubber-ducky}}}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Finite State Machine Designer} $|$ \footnotesize\emph{C, LaTeX, TikZ, Automata Theory}}{}
+        \resumeItemListStart
+            \resumeItem{A minimal Finite State Machine Designer implemented in C that generates beautiful LaTeX visualizations with TikZ}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/fsm}{\underline{https://github.com/AntonioBerna/fsm}}}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Neural Network Logic Gates} $|$ \footnotesize\emph{Python, Raspberry Pi, Machine Learning}}{}
+        \resumeItemListStart
+            \resumeItem{LED control system using neural networks to implement logic gates on Raspberry Pi}
+            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
+        \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 % -------------------- SKILLS --------------------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{    
-     \textbf{Software Development:}{ Python, C, C++, Rust, Flask, PostgreSQL, MongoDB, CUDA } \\
-     \textbf{Embedded \& Firmware:}{ Arduino, Raspberry Pi, ESP32, STM32, Assembly, PlatformIO, LVGL } \\
-     \textbf{Hardware Design:}{ KiCAD, Digital, EasyEDA } \\
-     \textbf{DevOps:}{ Git, GitHub, Docker, Heroku, PythonAnywhere, Linode, Google Cloud } \\
-     \textbf{Documentation:}{ Markdown, \LaTeX, TeXmacs, Excalidraw, Draw.io } \\
-     \textbf{Teaching:}{ Audacity, OBS Studio, FFmpeg, Kdenlive } \\
+    \small{\item{
+      \textbf{Embedded \& Firmware:}{ Arduino, Raspberry Pi, ESP32, STM32, PlatformIO, ESP-IDF, LVGL, CUDA, Embedded Rust } \\
+      \textbf{Software Design \& Architecture:}{ Design Patterns, OOP, Clean Code, Clean Architecture, SOLID \& DRY Principles } \\
+      \textbf{Software Development:}{ Python, C, C++, Rust, Django, PostgreSQL, MongoDB, Assembly } \\
+      \textbf{Hardware Design:}{ KiCAD, Digital, EasyEDA } \\
+      \textbf{Mobile Development:}{ Flutter } \\
+      \textbf{Web Development:}{ TypeScript, Three.js, GSAP } \\
+      \textbf{AI:}{ Neural Networks, Machine Learning, Computer Vision } \\
+      \textbf{DevOps:}{ Git, GitHub, Docker, Heroku, Linode, Google Cloud, Squarespace } \\
+      \textbf{Documentation \& Teaching:}{ Markdown, \LaTeX, TeXmacs, Excalidraw, OBS Studio, FFmpeg, Audacity } \\
     }}
  \end{itemize}
 
