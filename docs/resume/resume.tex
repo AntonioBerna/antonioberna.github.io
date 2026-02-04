@@ -139,6 +139,15 @@
     \faIcon{phone} (+39) 3338704611
 \end{center}
 
+% -------------------- PROFILE --------------------
+\section{Profile}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Embedded \& firmware Engineer and B.Sc. Computer Engineering student focused on microcontrollers (Arduino, ESP32, STM32, Raspberry Pi), C/C++ and Rust, real-time signal processing, and hardware/software integration. Strong open-source track record (Arduino, Espressif) and hands-on delivery from prototype to production deployments.
+    }}
+ \end{itemize}
+\vspace{-10pt}
+
 % -------------------- EDUCATION --------------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -155,16 +164,16 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {\href{https://github.com/Weigence}{\underline{Weigence}}}{Rome, IT}
-      {CEO \& CTO}{Present}
+      {CEO \& CTO}{July 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Founded tech company offering integrated ERP solutions with optional IoT hardware for warehouse automation}
-        \resumeItem{Architected modular platform with Django backend, Flutter mobile apps, PostgreSQL database, and ESP32 hardware with AI-powered parts recognition}
+        \resumeItem{Architected modular platform with Django backend, Flutter mobile apps, PostgreSQL database, and custom ESP32 hardware (KiCAD PCB design) with AI-powered parts recognition}
         \resumeItem{Secured CO.GE. Impianti S.r.l. as first commercial client with successful ERP deployment}
       \resumeItemListEnd
       
     \resumeSubheading
       {\href{https://www.cogeimpiantisrl.it/}{\underline{CO.GE. Impianti S.r.l.}} (via \href{https://github.com/Weigence}{\underline{Weigence}})}{Mentana (Rome), IT}
-      {Strategic Consultant}{July 2025 -- January 2026}
+      {Strategic Consultant}{July 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Implemented complete ERP system for warehouse management with software-only solution (client opted out of hardware integration)}
         \resumeItem{Deployed production infrastructure on cloud with containerized services and relational database}
@@ -191,7 +200,7 @@
         {\href{https://www.youtube.com/c/CleverCode}{\underline{CleverCode YouTube Channel}}}{Rome, IT}
         {Creator \& Educational Content Producer}{2022 -- Present}
         \resumeItemListStart
-          \resumeItem{Built community of 1.5K+ subscribers with 1.7K monthly views through technical tutorials in Italian}
+            \resumeItem{Grew an Italian technical YouTube channel to 1.4K+ subscribers and 162K+ total views by publishing hands-on engineering tutorials}
           \resumeItem{Popular series include \href{https://www.youtube.com/playlist?list=PLT--ndZEB54ek5_Zv6x6WCioh5m35zh5i}{\underline{Embedded Rust on ESP32}}, and \href{https://www.youtube.com/watch?v=x-YfzhppzcQ}{\underline{Git \& GitHub}} comprehensive courses}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -238,46 +247,46 @@
 % -------------------- PROJECTS --------------------
 \section{Projects}
     \resumeSubHeadingListStart
-        \resumeProjectHeading
-        {\textbf{Sudoku Solver} $|$ \footnotesize\emph{C, Bitmasking, Backtracking}}{}
+    \resumeProjectHeading
+      {\textbf{ESP32 Spectrum Analyzer} $|$ \footnotesize\emph{C++, ESP32, FFT, Signal Processing}}{}
+      \resumeItemListStart
+    \resumeItem{Real-time spectrum analyzer using FFT (radix-2) implemented in C++ for ESP32}
+          \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/spectrum-analyzer}{\underline{https://github.com/AntonioBerna/spectrum-analyzer}}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+    {\textbf{Rubber Ducky} $|$ \footnotesize\emph{Security Research, USB HID}}{}
         \resumeItemListStart
-            \resumeItem{3rd Place Tor Vergata Programming Challenge 2023 - Solves 9 sudoku puzzles in 637.9μs average using Bitmasking + Backtracking Algorithm}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/sudoku-solver}{\underline{https://github.com/AntonioBerna/sudoku-solver}}}
+      \resumeItem{USB HID research tool for input emulation and security testing in lab environments}
+      \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/rubber-ducky}{\underline{https://github.com/AntonioBerna/rubber-ducky}}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Neural Network Logic Gates} $|$ \footnotesize\emph{Python, Raspberry Pi, Machine Learning}}{}
+      \resumeItemListStart
+          \resumeItem{LED control system using neural networks to implement logic gates on Raspberry Pi}
+          \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Sudoku Solver} $|$ \footnotesize\emph{C, Bitmasking, Backtracking}}{}
+    \resumeItemListStart
+      \resumeItem{3rd Place Tor Vergata Programming Challenge 2023 - Solves 9 sudoku puzzles in 637.9 us average using bitmasking + backtracking}
+      \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/sudoku-solver}{\underline{https://github.com/AntonioBerna/sudoku-solver}}}
+    \resumeItemListEnd
+        
+      \resumeProjectHeading
+    {\textbf{Finite State Machine Designer} $|$ \footnotesize\emph{C, LaTeX, TikZ, Automata Theory}}{}
+        \resumeItemListStart
+      \resumeItem{Minimal Finite State Machine Designer in C that generates LaTeX visualizations with TikZ}
+      \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/fsm}{\underline{https://github.com/AntonioBerna/fsm}}}
         \resumeItemListEnd
         
-        \resumeProjectHeading
-        {\textbf{ESP32 Spectrum Analyzer} $|$ \footnotesize\emph{C++, ESP32, FFT, Signal Processing}}{}
+      \resumeProjectHeading
+    {\textbf{Valkit} $|$ \footnotesize\emph{Docker, Valgrind, Cross-Platform}}{}
         \resumeItemListStart
-            \resumeItem{Real-time spectrum analyzer using FFT (radix-2) algorithm implemented in C++ for ESP32}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/spectrum-analyzer}{\underline{https://github.com/AntonioBerna/spectrum-analyzer}}}
-        \resumeItemListEnd
-        
-        \resumeProjectHeading
-        {\textbf{Valkit} $|$ \footnotesize\emph{Docker, Valgrind, Cross-Platform}}{}
-        \resumeItemListStart
-            \resumeItem{Docker tool extending Valgrind to macOS with multi-architecture support (amd64/arm64) and glibc compatibility fixes}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/valkit}{\underline{https://github.com/AntonioBerna/valkit}}}
-        \resumeItemListEnd
-        
-        \resumeProjectHeading
-        {\textbf{Rubber Ducky} $|$ \footnotesize\emph{Security Research, USB HID}}{}
-        \resumeItemListStart
-            \resumeItem{Security research tool for USB HID attack simulation and penetration testing}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/rubber-ducky}{\underline{https://github.com/AntonioBerna/rubber-ducky}}}
-        \resumeItemListEnd
-        
-        \resumeProjectHeading
-        {\textbf{Finite State Machine Designer} $|$ \footnotesize\emph{C, LaTeX, TikZ, Automata Theory}}{}
-        \resumeItemListStart
-            \resumeItem{A minimal Finite State Machine Designer implemented in C that generates beautiful LaTeX visualizations with TikZ}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/fsm}{\underline{https://github.com/AntonioBerna/fsm}}}
-        \resumeItemListEnd
-        
-        \resumeProjectHeading
-        {\textbf{Neural Network Logic Gates} $|$ \footnotesize\emph{Python, Raspberry Pi, Machine Learning}}{}
-        \resumeItemListStart
-            \resumeItem{LED control system using neural networks to implement logic gates on Raspberry Pi}
-            \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/nn-rpi-logic-gates}{\underline{https://github.com/AntonioBerna/nn-rpi-logic-gates}}}
+      \resumeItem{Docker tool extending Valgrind to macOS with multi-architecture support (amd64/arm64) and glibc compatibility fixes}
+      \resumeItem{Open Source Code: \href{https://github.com/AntonioBerna/valkit}{\underline{https://github.com/AntonioBerna/valkit}}}
         \resumeItemListEnd
     \resumeSubHeadingListEnd
 
